@@ -1,0 +1,26 @@
+{
+    "root": {
+        "prototype": "mod/data/service/expression-data-mapping",
+        "values": {
+            "objectDescriptor": {"@": "TopicDescriptor"},
+            "rawDataPrimaryKeys":["id"],
+            "objectMapping": {
+                "rules": {
+                    "name": {"<->": "nspname"},
+                    "oid": {"<->": "oid"}
+                }
+            },
+            "rawDataMapping": {
+                "rules": {
+                }
+            },
+            "requisitePropertyNames": [
+                "name","oid"
+            ]
+        }
+    },
+
+    "TopicDescriptor": {
+        "object": "../model/topic.mjson"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "root": {
+        "prototype": "mod/core/meta/module-object-descriptor",
+        "values": {
+            "name": "Topic",
+            "propertyDescriptors": [
+                {"@": "namespaceName"},
+                {"@": "oid"}
+            ],
+            "objectDescriptorModule": {
+                "%":"./topic.mjson"
+            },
+            "exportName": "Topic",
+            "module": {
+                "%": "./topic"
+            }
+
+        }
+    },
+    "namespaceName": {
+        "prototype": "mod/core/meta/property-descriptor",
+        "values": {
+            "name": "namespaceName",
+            "valueType": "string"
+        }
+    },
+    "oid": {
+        "prototype": "mod/core/meta/property-descriptor",
+        "values": {
+            "name": "oid",
+            "valueType": "number"
+        }
+    }
+
+}
